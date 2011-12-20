@@ -1,0 +1,19 @@
+Source: python-ucltip
+Section: python
+Priority: optional
+Maintainer: Hsin-Yi Chen (hychen) <ossug.hychen@gmail.com>
+Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.2
+Homepage: http://pypi.python.org/pypi/ucltip
+Vcs-Git: git://github.com/hychen/pkg-ucltip.git
+X-Python-Version: >= 2.5
+DM-Upload-Allowed:yes
+
+Package: python-ucltip
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Python module to help making command line tool Python binding faster
+ This library makes you to use command line tool in Python by OO way.
+ The concept is to transform 1) command as a instance, 2) options
+ of command as arguments and keyword arguments of function or
+ instance method when method be used as a sub command of a command.
